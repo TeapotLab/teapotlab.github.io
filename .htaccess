@@ -1,0 +1,29 @@
+RewriteEngine On 
+RewriteCond %{HTTPS} !=on 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+RewriteOptions inherit
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L] 
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L] 
+
+ErrorDocument 400 /400.php
+
+ErrorDocument 401 /401.php
+
+ErrorDocument 403 /403.php
+
+ErrorDocument 404 /404.php
+
+ErrorDocument 500 /500
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
