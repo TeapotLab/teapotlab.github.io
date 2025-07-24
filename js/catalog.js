@@ -96,7 +96,7 @@
       <div class="col-md-4 col-sm-6 app-item">
         <div class="app-table wow fadeInUp">
           <div class="table-inner text-center">
-            <img src="${app.icon}" alt="${app.name}" class="app-icon">
+            <img class="app-icon" src="${app.icon}" alt="${app.name}" class="app-icon">
             <h3>${app.name}</h3>
             <p class="phrase">${app.description}</p>
             <ul class="feature-list">
