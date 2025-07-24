@@ -128,7 +128,7 @@
             <div class="row">
                 <div class="col-md-5">
                     <h2>Built with Cutting-Edge Tools</h2>
-                    <p>Our solutions are crafted using industry-leading tools like Blender, Webflow, and LottieFiles for
+                    <p>Our solutions are crafted using industry-leading organizations like Google, Flutterwave, and Flutter for
                         stunning visuals and smooth functionality.</p>
                 </div>
                 <div class="map-showcase wow fadeInRight">
