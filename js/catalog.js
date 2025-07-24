@@ -93,7 +93,7 @@
   // Function to generate HTML for each app
   function generateAppHTML(app) {
     return `
-      <div class="col-md-4 col-sm-6 app-item">
+      <div class="col-md-3 col-sm-6 app-item">
         <div class="app-table wow fadeInUp">
           <div class="table-inner text-center">
             <img class="app-icon" src="${app.icon}" alt="${app.name}" class="app-icon">
