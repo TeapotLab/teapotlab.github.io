@@ -379,6 +379,19 @@
         </div>
     </footer><!-- //Footer -->
 
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Get the company name from the element
+        const copyrightElement = document.querySelector('.copyright');
+        if (copyrightElement) {
+          const companyName = copyrightElement.innerText.split(' ').slice(1).join(' ');
+          copyrightElement.innerText = `© ${currentYear} ${companyName}`;
+        } else {
+          console.error('Copyright element not found');
+        }
+    </script>
     <script src="js/jquery-2.1.4.min.js"></script> <!-- jQuery -->
     <script src="js/jquery-migrate-1.2.1.min.js"></script> <!-- jQuery Migrate Plugin -->
     <script src="js/bootstrap.min.js"></script> <!-- bootstrap -->
