@@ -443,6 +443,40 @@ input[type="email"]:focus {
 }
 
 /*****************************************************
+*** Header ***
+*****************************************************/
+/* Make the Magnific Popup overlay lighter */
+.mfp-bg {
+    opacity: 0.75 !important;
+}
+
+/* Video popup */
+.mfp-iframe-holder .mfp-content {
+    width: 90%;
+    max-width: 900px;
+}
+
+.mfp-iframe-holder .mfp-iframe-scaler {
+    padding-top: 56.25%;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .mfp-iframe-holder .mfp-content {
+        width: 96%;
+    }
+
+    .mfp-iframe-holder .mfp-iframe-scaler {
+        padding-top: 56.25%;
+    }
+
+    .mfp-close {
+        right: -5px;
+        top: -40px;
+    }
+}
+
+/*****************************************************
 *** Features ***
 *****************************************************/
 #features {
