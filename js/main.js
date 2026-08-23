@@ -29,10 +29,15 @@ $(document).ready(function() {
 		$('#slide_out_menu').toggleClass('open');
 
 		if ($('#slide_out_menu').hasClass('open')) {
-			$('.menu-close').on('click', function(e){
-				e.preventDefault();
-				$('#slide_out_menu').removeClass('open');
-			})
+			$(document).on('click', function (e) {
+				if (
+					$('#slide_out_menu').hasClass('open') &&
+					!$(e.target).closest('#slide_out_menu, #navigation').length
+				) {
+					$('#slide_out_menu').removeClass('open');
+					$('#navigation').removeClass('open');
+				}
+			});
 		}
 	});
 
