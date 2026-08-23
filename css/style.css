@@ -29,18 +29,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 62px;
+  font-size: 40px;
   line-height: 72px;
 }
 
 h2 {
-  font-size: 52px;
+  font-size: 30px;
   line-height: 52px;
   margin-bottom: 64px;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 25px;
   line-height: 38px;
   font-weight: 300;
   /* margin-bottom: 46px; */
@@ -440,6 +440,22 @@ input[type="email"]:focus {
 
 #header .video-btn i {
   margin-right: 15px;
+}
+
+/* Magnific Popup Curved Edges Fix */
+.mfp-iframe-holder .mfp-content {
+  max-width: 900px;
+}
+
+.mfp-iframe-scaler {
+  border-radius: 16px;
+  /* Adjust curve strength */
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.mfp-iframe-scaler iframe {
+  border-radius: 16px;
 }
 
 /*****************************************************
